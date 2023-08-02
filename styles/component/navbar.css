@@ -1,0 +1,62 @@
+.navbar-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.navbar-app-logo {
+  width: 4vw;
+  object-fit: contain;
+}
+
+.navbar-app-nav {
+  display: flex;
+}
+
+.navbar-app-item {
+  position: relative;
+  margin-left: 6rem;
+}
+
+.navbar-app-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar-app-item::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translateY(4px);
+  transition: all 0.2s ease-in;
+}
+
+.navbar-app-item:hover::after {
+  width: 100%;
+  transition: all 0.2s ease-in;
+}
+
+.navbar-app-toggle {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+@media screen and (max-width:992px){
+  .navbar-app {
+    padding: 24px 18px;
+  }
+  .navbar-app-logo {
+    width: 16vw;
+    object-fit: contain;
+  }
+  .navbar-app-nav {
+    display: none;
+  }
+}
