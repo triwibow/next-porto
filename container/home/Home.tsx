@@ -1,14 +1,28 @@
 import React from "react";
-import { Container, Alert } from "reactstrap";
 
 const Home:React.FC = () => {
   return (
-    <Container>
-      {/* <Alert color="primary">
-        Hey! Pay attention.
-      </Alert> */}
-    </Container>
-  )
+    <section className="hs">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-md-6 my-4">
+            <h1 className="hs-title">
+              Hi,👋
+              <br/>
+              My Name is 
+              <br />
+              Pavan MG
+              <br />
+              I build things for web
+            </h1>
+          </div>
+          <div className="col-md-6 hs-image my-4">
+            <img src="/images/hero-image.png" alt="hero-image"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Home;

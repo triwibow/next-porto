@@ -1,8 +1,12 @@
 .navbar-app {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 37px 0;
 }
 
 .navbar-app-logo {
@@ -44,8 +48,7 @@
 }
 
 .navbar-app-toggle {
-  background-color: transparent;
-  border: 1px solid transparent;
+  display: none;
 }
 
 @media screen and (max-width:992px){
@@ -58,5 +61,10 @@
   }
   .navbar-app-nav {
     display: none;
+  }
+  .navbar-app-toggle {
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
   }
 }

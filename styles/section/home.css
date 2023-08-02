@@ -1,0 +1,39 @@
+/* .hs => home-section  */
+.hs {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hs-title {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.4em;
+}
+
+.hs-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hs-image img {
+  width: 20rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width:992px){
+  .hs-title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .hs-image {
+    justify-content: center;
+  }
+
+  .hs-image img {
+    width: 10rem;
+  }
+}

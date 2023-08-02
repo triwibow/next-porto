@@ -1,4 +1,5 @@
 @import 'reset.css';
 @import 'globals.css';
 @import 'component/navbar.css';
-
+@import 'component/typography.css';
+@import 'section/home.css';
