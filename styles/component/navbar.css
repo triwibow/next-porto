@@ -1,8 +1,4 @@
 .navbar-app {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  right: 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,14 +50,45 @@
 @media screen and (max-width:992px){
   .navbar-app {
     padding: 24px 18px;
+    flex-direction: column;
   }
+
+  .navbar-app-brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   .navbar-app-logo {
     width: 16vw;
     object-fit: contain;
   }
-  .navbar-app-nav {
-    display: none;
+
+  .navbar-app-collapse {
+    height: 0;
+    opacity: 0;
+    transition: all .3s linear;
   }
+
+  .navbar-app-collapse.show {
+    background-color: #FFF;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    opacity: 1;
+    transition: all .3s linear;
+  }
+
+  .navbar-app-nav {
+    display: block;
+  }
+
+  .navbar-app-item {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
   .navbar-app-toggle {
     display: block;
     background-color: transparent;
