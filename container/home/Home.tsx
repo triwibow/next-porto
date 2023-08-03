@@ -11,7 +11,7 @@ const Home:React.FC = () => {
               <br/>
               My Name is 
               <br />
-              <span className="text-gradient-primary">Tri Wibowo</span>
+              <span className="text-gradient-primary">Pavan MG</span>
               <br />
               I build things for web
             </h1>
