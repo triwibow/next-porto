@@ -21,7 +21,7 @@
 
 .navbar-app-link {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 .navbar-app-item::after {
@@ -71,7 +71,6 @@
 
   .navbar-app-collapse {
     position: absolute;
-    
     z-index: 999;
     width: 100%;
     top: -400px;
