@@ -96,7 +96,7 @@ const About:React.FC = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-md-12 mb-5'>
-            <h1 className='text-title mb-5'>About Me</h1>
+            <h1 className='text-title mb-for-title'>About Me</h1>
             <p className='text-primary abs-desc'>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
             </p>
@@ -104,7 +104,7 @@ const About:React.FC = () => {
         </div>
         <div className='row'>
           <div className='col-md-12 mb-5'>
-            <h1 className='text-title mb-5'>Work Experience</h1>
+            <h1 className='text-title mb-for-title'>Work Experience</h1>
 
             {listExp.map(item => {
               return _renderList(item)
@@ -112,7 +112,7 @@ const About:React.FC = () => {
             
           </div>
           <div className='col-md-12'>
-            <h1 className='text-title mb-5'>Education</h1>
+            <h1 className='text-title mb-for-title'>Education</h1>
             {listEducation.map(item => {
               return _renderList(item)
             })}

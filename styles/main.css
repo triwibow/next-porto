@@ -4,6 +4,7 @@
 @import 'component/navbar.css';
 @import 'component/typography.css';
 @import 'component/layout.css';
+@import 'component/margin.css';
 
 @import 'section/home.css';
 @import 'section/about.css';
