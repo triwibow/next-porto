@@ -12,6 +12,7 @@
 
 .navbar-app-nav {
   display: flex;
+  align-items: center;
 }
 
 .navbar-app-item {
@@ -38,13 +39,22 @@
   transition: all 0.2s ease-in;
 }
 
-.navbar-app-item:hover::after {
+.navbar-app-item:not(.social):hover::after {
   width: 100%;
   transition: all 0.2s ease-in;
 }
 
 .navbar-app-toggle {
   display: none;
+}
+
+.navbar-app-social {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-app-social-item {
+  margin-left: 1rem;
 }
 
 @media screen and (max-width:992px){
@@ -73,17 +83,18 @@
     position: absolute;
     z-index: 999;
     width: 100%;
-    top: -400px;
+    top: -600px;
     left: 0;
     right: 0;
-    transition: all .3s ease;
+    height: 100vh;
+    background-color: #FFF;
+    padding: 0 1.850rem;
+    transition: all .6s ease;
   }
 
   .navbar-app-collapse.show {
     top: 0;
-    background-color: #FFF;
-    height: 100vh;
-    transition: all .3s ease;
+    transition: all .6s ease;
   }
 
   .navbar-app-nav {
@@ -103,7 +114,13 @@
     border: 1px solid transparent;
   }
 
-  .navbar-app-item:hover::after {
+  .navbar-app-item:not(.social):hover::after {
     width: 0;
+  }
+
+  .navbar-app-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

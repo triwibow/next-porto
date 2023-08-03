@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import {IoClose} from 'react-icons/io5'
 
 const Navbar:React.FC = () => {
@@ -53,6 +53,25 @@ const Navbar:React.FC = () => {
             <Link className='navbar-app-link' href={"/contact"}>
               Contact
             </Link>
+          </li>
+          <li className='navbar-app-item social'>
+            <ul className='navbar-app-social'>
+              <li className='navbar-app-social-item'>
+                <Link href={"/"}>
+                  <FaTwitter color="#000" size="28" />
+                </Link>
+              </li>
+              <li className='navbar-app-social-item'>
+                <Link href={"/"}>
+                  <FaGithub color="#000" size="28" />
+                </Link>
+              </li>
+              <li className='navbar-app-social-item'>
+                <Link href={"/"}>
+                  <FaLinkedin color="#000" size="28" />
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
