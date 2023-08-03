@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { FaBars } from 'react-icons/fa'
+import {IoClose} from 'react-icons/io5'
 
 const Navbar:React.FC = () => {
   const [show, setShow] = useState<boolean>(false);
@@ -18,10 +19,17 @@ const Navbar:React.FC = () => {
           className='navbar-app-toggle'
           onClick={() => setShow(!show)}
         >
-          <FaBars 
-            size="19"
-            color="#1F2428"
-          />
+          {show ? (
+            <IoClose 
+              size="24"
+              color="#1F2428"
+            />
+          ):(
+            <FaBars 
+              size="19"
+              color="#1F2428"
+            />
+          )}
         </button>
       </div>
       <div className={`navbar-app-collapse ${show && ('show')}`}>
