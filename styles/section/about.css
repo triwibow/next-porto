@@ -32,6 +32,7 @@
 @media screen and (max-width:992px){
   .abs {
     margin-top: 3vh;
+    padding: 0 1.25rem;
   }
   .abs-desc {
     width: 100%;

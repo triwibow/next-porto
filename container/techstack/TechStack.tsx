@@ -71,7 +71,7 @@ const TechStack:React.FC = () => {
 
   const _renderList = (item:List) => {
     return (
-      <div className='col-md-2 col-3 mb-5 d-flex align-items-center'>
+      <div className='col-md-2 col-3 mb-5 d-flex align-items-center' key={item.id}>
         <img src={item.source} alt="html5" className='img-fluid' />
       </div>
     )
