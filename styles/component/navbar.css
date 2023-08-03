@@ -87,13 +87,14 @@
     left: 0;
     right: 0;
     height: 100vh;
-    background-color: #FFF;
     padding: 0 1.850rem;
     transition: all .6s ease;
+    overflow-y: hidden;
   }
 
   .navbar-app-collapse.show {
     top: 0;
+    background-color: #FFF;
     transition: all .6s ease;
   }
 
@@ -105,7 +106,7 @@
   .navbar-app-item {
     margin-left: 0;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 1.25rem;
   }
 
   .navbar-app-toggle {

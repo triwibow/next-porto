@@ -1,10 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { FaBars, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import {IoClose} from 'react-icons/io5'
 
 const Navbar:React.FC = () => {
   const [show, setShow] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShow(false)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, []);
 
   return (
     <div className='navbar-app container'>
