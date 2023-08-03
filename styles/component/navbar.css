@@ -71,7 +71,7 @@
 
   .navbar-app-collapse {
     position: absolute;
-    background-color: #FFF;
+    
     z-index: 999;
     width: 100%;
     top: -400px;
@@ -82,6 +82,7 @@
 
   .navbar-app-collapse.show {
     top: 0;
+    background-color: #FFF;
     height: 100vh;
     transition: all .3s ease;
   }

@@ -1,0 +1,52 @@
+/* .abs => about-section */
+
+.abs {
+  margin-top: 10vh;
+}
+
+.abs-desc {
+  width: 50%;
+  text-align: justify;
+}
+
+.abs-list {
+  padding-bottom: 26px;
+  border-bottom: 2px solid #bebebe;
+}
+
+.abs-list h2 {
+  color: #706c6c;
+  font-size: 1.25rem;
+}
+
+.abs-list span {
+  color: #706c6c;
+  font-size: .875rem;
+}
+
+.abs-comp-loc {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width:992px){
+  .abs {
+    margin-top: 3vh;
+  }
+  .abs-desc {
+    width: 100%;
+  }
+
+  .abs-list h2 {
+    font-size: .875rem;
+  }
+  
+  .abs-list span {
+    font-size: .75rem;
+  }
+
+  .abs-comp-loc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

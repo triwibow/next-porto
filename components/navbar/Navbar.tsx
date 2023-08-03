@@ -35,12 +35,12 @@ const Navbar:React.FC = () => {
       <div className={`navbar-app-collapse ${show && ('show')}`}>
         <ul className='navbar-app-nav'>
           <li className='navbar-app-item'>
-            <Link className='navbar-app-link' href={"#"}>
+            <Link className='navbar-app-link' href={"/"}>
               Home
             </Link>
           </li>
           <li className='navbar-app-item'>
-            <Link className='navbar-app-link' href={"#"}>
+            <Link className='navbar-app-link' href={"/about"}>
               About
             </Link>
           </li>

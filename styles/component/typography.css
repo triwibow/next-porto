@@ -1,6 +1,10 @@
 .text-title {
-  font-size: 3.625em;
+  font-size: 3rem;
   font-weight: bold;
+}
+
+.text-primary {
+  color:#706c6c!important;
 }
 
 @media screen and (max-width:992px){
