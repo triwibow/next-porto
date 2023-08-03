@@ -49,14 +49,19 @@
 
 @media screen and (max-width:992px){
   .navbar-app {
-    padding: 24px 18px;
+    padding: 0 0;
     flex-direction: column;
+    position: relative;
+    background-color: #FFF;
   }
 
   .navbar-app-brand {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: #FFF;
+    z-index: 1000;
+    padding: 24px 18px;
   }
 
   .navbar-app-logo {
@@ -65,22 +70,25 @@
   }
 
   .navbar-app-collapse {
-    height: 0;
-    opacity: 0;
-    transition: all .3s linear;
+    position: absolute;
+    background-color: #FFF;
+    z-index: 999;
+    width: 100%;
+    top: -400px;
+    left: 0;
+    right: 0;
+    transition: all .3s ease;
   }
 
   .navbar-app-collapse.show {
-    background-color: #FFF;
-    width: 100%;
+    top: 0;
     height: 100vh;
-    z-index: 999;
-    opacity: 1;
-    transition: all .3s linear;
+    transition: all .3s ease;
   }
 
   .navbar-app-nav {
     display: block;
+    margin-top: 100px;
   }
 
   .navbar-app-item {
@@ -93,5 +101,9 @@
     display: block;
     background-color: transparent;
     border: 1px solid transparent;
+  }
+
+  .navbar-app-item:hover::after {
+    width: 0;
   }
 }
