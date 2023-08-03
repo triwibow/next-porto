@@ -1,0 +1,11 @@
+/* .abs => techstack-section */
+
+.tss {
+  margin-top: 10vh;
+}
+
+@media screen and (max-width:992px){
+  .tss {
+    margin-top: 3vh;
+  }
+}

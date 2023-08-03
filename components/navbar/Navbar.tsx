@@ -45,7 +45,7 @@ const Navbar:React.FC = () => {
             </Link>
           </li>
           <li className='navbar-app-item'>
-            <Link className='navbar-app-link' href={"#"}>
+            <Link className='navbar-app-link' href={"/techstack"}>
               Tech Stack
             </Link>
           </li>
